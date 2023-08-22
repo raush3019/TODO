@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;700&family=Poppins:wght@100;200;300;400&family=Roboto:wght@100;300;400;500&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="h2">todos</div>
+
+        <div class="content">
+            <form action="">
+                <i class="ri-arrow-down-s-line"></i>
+                <input autocomplete="off" required id="createTodo" placeholder="What needs to be done?" type="text">
+                <button type="submit"></button>
+            </form>
+
+            <ul>
+                
+                <!-- <li>
+                   
+                    <div class="radioDiv">
+                        <input type="checkbox">
+                        <span class="ri-check-lin" ><i class="ri-check-line"></i></span>
+                    </div>
+                    <form class="listItemValue">
+                        <input class="disable" type="text">
+                        <p class="disable" id="createTodo" >heae</p>
+                        <button  type="submit" class="disable" ></button>
+                    </form>
+                    <i class="ri-close-line"></i>
+                </li> -->
+  
+                
+            </ul>
+
+            <div class="links">
+                <p class="itemCount"> <span class="countLeft" >0</span> items left</p>
+                <div class="allItems activeContent">All</div>
+                <div class="ActiveItems ">Active</div>
+                <div class="completedItems">Completed</div>
+                <div class="clearTodo disable">clear Completed</div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p>Double Click to edit a todo</p>
+            <p>Created by raushan</p>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked@1.1.1/marked.min.js" ></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

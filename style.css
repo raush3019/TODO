@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #f5f5f5;
+}
+.main > .h2 {
+  font-family: "poppins";
+  color: rgba(199, 150, 158, 0.584);
+  font-size: 80px;
+  font-weight: 100;
+  padding: 0;
+  text-align: center;
+}
+.disable {
+  display: none !important;
+}
+.content {
+  min-height: 0px;
+  background-color: #fff;
+  width: 550px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.content > form {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  border-bottom: 1px solid rgb(198, 198, 198);
+
+  & input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    /* background-color: red; */
+    font-family: "poppins";
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 200;
+    color: rgb(164, 164, 164);
+  }
+  & input:focus {
+    outline: none;
+  }
+  & ::placeholder {
+    font-style: italic;
+    font-weight: 100;
+    color: rgb(207, 207, 207);
+  }
+
+  & > i {
+    height: 100%;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(202, 202, 202);
+    cursor: pointer;
+  }
+  & button {
+    display: none;
+  }
+}
+
+.content > ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-width: none;
+
+
+  & > li {
+    width: 100%;
+    height: 65px;
+    list-style: none;
+    display: flex;
+    border-bottom: 1px solid rgb(216, 216, 216);
+
+    & .radioDiv {
+      height: 100%;
+      width: 60px;        
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & input {
+        height: 30px;
+        width: 30px;
+        appearance: none;
+        position: absolute;
+        cursor: pointer;
+        z-index: 10;
+      }
+      & span {
+        /* display: none; */
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        padding: 15px;
+        border: 1px solid rgb(205, 205, 205);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        transform: rotate(-10deg);
+        & i {
+          color: #fff;
+        }
+      }
+      & input[type="checkbox"]:checked ~ span {
+        border: 1px solid rgb(127, 223, 127);
+      }
+      & input:checked ~ span i {
+        color: rgb(117, 207, 117);
+      }
+    }
+    & .ri-close-line {
+      height: 100%;
+      width: 60px;
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgba(199, 150, 158, 0.584);
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: -15%;
+      transform: translate(-50% 0);
+    }
+
+    & .listItemValue {
+      position: relative;
+      width: calc(100% - 120px);
+      height: 100%;
+      display: flex;
+      align-items: center;
+      & p {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 10px;
+        left: 0;
+        top: 0;
+        font-family: "poppins";
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 200;
+        color: rgb(164, 164, 164);
+        /* background-color: rgb(199, 234, 150); */
+        cursor: pointer;
+        /* display: none; */
+      }
+
+      & input {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 10px;
+        position: absolute;
+
+        font-family: "poppins";
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 200;
+        color: rgb(164, 164, 164);
+        cursor: pointer;
+        border: none;
+      }
+    }
+
+    & .listItemValue > input:focus {
+      outline: none;
+    }
+    
+  }
+}
+.content > .links {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "poppins";
+  color: rgb(188, 188, 188);
+  font-weight: 200;
+  font-size: 13px;
+
+  & p {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }
+  & > div {
+    margin: 0 10px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  & .clearTodo{
+    position: absolute;
+    top:50%;
+    right: -12%;
+    transform: translate(-50%,-50%);
+  }
+  & .activeContent {
+    border: 1px solid rgb(255, 213, 220);
+  }
+}
+
+.footer {
+  height: 600px;
+  width: 100%;
+  margin-top: 60px;
+  text-align: center;
+  font-family: "poppins";
+  font-size: 8px;
+  font-weight: 300;
+  color: rgb(176, 176, 176);
+
+  & p {
+    margin: 10px 0;
+  }
+}
